@@ -5,10 +5,10 @@ title: index page
 
 <ul class="list-bus-stop">
 <li><a href="#1">Publish</a></li>
-<li><a href="#2"></a>PR Review</li>
-<li><a href="#3"></a>Sign-off</li>
-<li><a href="#4"></a>Merged</li>
-<li><a href="#5"></a>PR2Master</li>
+<li><a href="#2">PR Review</a></li>
+<li><a href="#3">Sign-off</a></li>
+<li><a href="#4">Merged</a></li>
+<li><a href="#5">PR2Master</a></li>
 <li><a href="#6">Go Live</a></li>
 </ul>
 
@@ -35,7 +35,7 @@ https://github.com/MicrosoftDocs/learn-dynamics-pr/pull/{pr#}
 https://github.com/MicrosoftDocs/learn-bizapps-pr/pull/{pr#}
 ```
 Replace the {pr#} in the patterns, you could get the {pr#} from the _Auto Publishing to Learn_ notification email.  
-![get pr# from the build notification email](../../Linked_Image_Files/get-pr-from-email.png)
+![get pr# from the build notification email]({{site.baseurl}}/assets/get-pr-from-email.png)
 
 #### Task 1: Create final PR, and tag the author in the work item
 1. Create a final PR for internal test.
@@ -45,7 +45,7 @@ Replace the {pr#} in the patterns, you could get the {pr#} from the _Auto Publis
 
 2. Go to work item.
 2. In Discussion tab, add a comment to notify author that the final PR is in iternal review.  
-    ![notify author pr is in review](../../Linked_Image_Files/lpub-pr-in-review-notify-author.png)
+    ![notify author pr is in review]({{site.baseurl}}/assets/lpub-pr-in-review-notify-author.png)
 
 #### Task 2: Run internal PR review, and work with author to fix all.
 
@@ -69,28 +69,28 @@ If the trophy for the LP is not available when launching the LP, use the general
 
 1. Go to the PR, check [Pull request(PR) patterns](#pr-patterns) section.
 2. Add comment `#sign-off`.  
-    ![sign-off pr](../../Linked_Image_Files/lpub-final-pr-sign-off.png)
+    ![sign-off pr]({{site.baseurl}}/assets/lpub-final-pr-sign-off.png)
 3. Tag the author in the work item.
     - In the Discussion tab, add a comment to notify author that the final PR is sign-off.  
-        ![final pr is sign-off](../../Linked_Image_Files/lpub-sign-off-notify-author.png)
+        ![final pr is sign-off]({{site.baseurl}}/assets/lpub-sign-off-notify-author.png)
 
 ### Merged to Release branch
 <a name="4"></a>
 If the final pr is merged to release branch:    
-![pr is merged](../../Linked_Image_Files/lpub-merged-to-release-branch.png)
+![pr is merged]({{site.baseurl}}/assets/lpub-merged-to-release-branch.png)
 1. Go to work item.
 2. Tag Ashley that the PR is merged, and it is ready to go live.  
-    ![pr go live](../../Linked_Image_Files/lpub-pr-merged-notify-author.png)
+    ![pr go live]({{site.baseurl}}/assets/lpub-pr-merged-notify-author.png)
 
 ### Create a pull request (PR) from Release branch to master
 <a name="5"></a>
 After the final pr is merged:
 1. Go to the release branch, by clicking the `to` branch in final pr.  
-    ![Go to release branch](../../Linked_Image_Files/lpub-release-branch.png)
+    ![Go to release branch]({{site.baseurl}}/assets/lpub-release-branch.png)
 2. Make sure the release branch is selected, click **Create Pull Request**.  
-    ![create pr](../../Linked_Image_Files/lpub-release-pr-to-master.png)
+    ![create pr]({{site.baseurl}}/assets/lpub-release-pr-to-master.png)
 3. When the build is green, tag @asajohnson for merge.    
-    ![tag Ashley for merge](../../Linked_Image_Files/lpub-tag-ashley.png)
+    ![tag Ashley for merge]({{site.baseurl}}/assets/lpub-tag-ashley.png)
 
 ### Create a pull request (PR) from master to live
 Ashley will do that and let us know when it's live.
@@ -125,9 +125,9 @@ To verify an **update module** is live:
 3. Construct the docs url using Module Url pattern and real-folder name.
 4. Open the Browser to try access the module using docs url.
 5. In the module page, right-click the page, select View Source.  
-    ![view source in html page](../../Linked_Image_Files/view-source.png)
+    ![view source in html page]({{site.baseurl}}/assets/view-source.png)
 6. Select Element -> head -> `<meta name="ms.date" content="10/15/2019" />`  
-    ![make sure ms.date value is updated](../../Linked_Image_Files/lpub-stage-ms.date.png)
+    ![make sure ms.date value is updated]({{site.baseurl}}/assets/lpub-stage-ms.date.png)
 
 **If the _ms.date_ value is latest, then the module is updated.**  
 **Else the module update is not live yet.**  
@@ -138,7 +138,7 @@ To verify an **update module** is live:
 #### Task 2: Tag the content author in work item
 1. Go to work item.
 1. In the Discussion tab, add a comment to notify author that the content is live and what the docs url is.  
-    ![tag author the content is live](../../Linked_Image_Files/tag-author-t-content-live.png)
+    ![tag author the content is live]({{site.baseurl}}/assets/tag-author-t-content-live.png)
 1. In the *04-Publishing Team Use Only* tab:
     - Fill the **Published Url** with the docs url.
     - Fill the **Release date** with the current date. 
