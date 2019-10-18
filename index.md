@@ -9,7 +9,7 @@ title: index page
 <li><a href="#3"></a>Sign-off</li>
 <li><a href="#4"></a>Merged</li>
 <li><a href="#5"></a>PR2Master</li>
-<li><a href="#6"></a>Go Live</li>
+<li><a href="#6">Go Live</a></li>
 </ul>
 
 
