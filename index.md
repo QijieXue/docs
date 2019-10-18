@@ -11,3 +11,137 @@ title: index page
 <li><a href="#5"></a>PR2Master</li>
 <li><a href="#6"></a>Go Live</li>
 </ul>
+
+
+### Create final pull request(final PR) for internal PR review
+<a name="1"></a>
+<a name="pr-patterns"></a>Pull request(PR) patterns:  
+`learn-pr` repo:
+```url
+https://github.com/MicrosoftDocs/learn-pr/pull/{pr#}
+```
+`learn-m365-pr` repo:
+```url
+https://github.com/MicrosoftDocs/learn-m365-pr/pull/{pr#}
+```
+
+`learn-dynamics-pr` repo:
+```url
+https://github.com/MicrosoftDocs/learn-dynamics-pr/pull/{pr#}
+```
+
+`learn-bizapps-pr` repo:
+```url
+https://github.com/MicrosoftDocs/learn-bizapps-pr/pull/{pr#}
+```
+Replace the {pr#} in the patterns, you could get the {pr#} from the _Auto Publishing to Learn_ notification email.  
+![get pr# from the build notification email](../../Linked_Image_Files/get-pr-from-email.png)
+
+#### Task 1: Create final PR, and tag the author in the work item
+1. Create a final PR for internal test.
+    - In general, it will overwrite the existing open PR everytime you click the **Publish Module** button in git repo.
+    - If you want to start a New PR, just close the existing PR. 
+    - Click the **Publish Module** button in git repo.
+
+2. Go to work item.
+2. In Discussion tab, add a comment to notify author that the final PR is in iternal review.  
+    ![notify author pr is in review](../../Linked_Image_Files/lpub-pr-in-review-notify-author.png)
+
+#### Task 2: Run internal PR review, and work with author to fix all.
+
+PR review Test Cases:  
+[Content Review](https://microsoftdigitallearning.visualstudio.com/Courseware/_queries/query-edit/66abaade-4bd0-4a6f-9925-22c0982a69dc/)  
+[PR review](https://microsoftdigitallearning.visualstudio.com/Courseware/_queries/query/ef3edd45-2929-4886-bda8-87ff622ee002)
+
+#### Task 3: Check-in the Policheck result into git repo _Compliance_Results_ folder.
+
+#### Use general badge or general trophy
+If the badge for the module is not available when launching the module, use the general badge.  
+"/learn/achievements/generic-badge.svg"
+
+If the trophy for the LP is not available when launching the LP, use the general trophy.  
+"/learn/achievements/generic-trophy.svg"
+
+**NOTE**: Make sure to replace the general badge or general trophy as soon as you received the real one.
+
+### Sign-off
+<a name="3"></a>
+
+1. Go to the PR, check [Pull request(PR) patterns](#pr-patterns) section.
+2. Add comment `#sign-off`.  
+    ![sign-off pr](../../Linked_Image_Files/lpub-final-pr-sign-off.png)
+3. Tag the author in the work item.
+    - In the Discussion tab, add a comment to notify author that the final PR is sign-off.  
+        ![final pr is sign-off](../../Linked_Image_Files/lpub-sign-off-notify-author.png)
+
+### Merged to Release branch
+<a name="4"></a>
+If the final pr is merged to release branch:    
+![pr is merged](../../Linked_Image_Files/lpub-merged-to-release-branch.png)
+1. Go to work item.
+2. Tag Ashley that the PR is merged, and it is ready to go live.  
+    ![pr go live](../../Linked_Image_Files/lpub-pr-merged-notify-author.png)
+
+### Create a pull request (PR) from Release branch to master
+<a name="5"></a>
+After the final pr is merged:
+1. Go to the release branch, by clicking the `to` branch in final pr.  
+    ![Go to release branch](../../Linked_Image_Files/lpub-release-branch.png)
+2. Make sure the release branch is selected, click **Create Pull Request**.  
+    ![create pr](../../Linked_Image_Files/lpub-release-pr-to-master.png)
+3. When the build is green, tag @asajohnson for merge.    
+    ![tag Ashley for merge](../../Linked_Image_Files/lpub-tag-ashley.png)
+
+### Create a pull request (PR) from master to live
+Ashley will do that and let us know when it's live.
+
+### Content is live
+<a name="6"></a>
+
+#### Task 1: Verify content is live
+
+Module Url pattern:  
+```url
+https://docs.microsoft.com/en-us/learn/modules/{module_folder}/
+```
+Learning Path Url pattern: 
+```url 
+https://docs.microsoft.com/en-us/learn/paths/{lp_folder}/
+```
+**NOTE**: Replace the {module_folder} or {lp_folder} with real-folder name.
+
+To verify a **new module** is live:
+1. Go to the module metadata file in git repos.
+2. Find the real-folder name, which is the `Target folder in github`.
+3. Construct the docs url using Module Url pattern and real-folder name.
+4. Open the Browser to try access the module using docs url.
+
+**If you could access the module with the docs url, then the module is live.**  
+**Else if you get a 404 Error, then the module is not live.**  
+
+To verify an **update module** is live:
+1. Go to the module metadata file in git repos.
+2. Find the real-folder name, which is the `Target folder in github`.
+3. Construct the docs url using Module Url pattern and real-folder name.
+4. Open the Browser to try access the module using docs url.
+5. In the module page, right-click the page, select View Source.  
+    ![view source in html page](../../Linked_Image_Files/view-source.png)
+6. Select Element -> head -> `<meta name="ms.date" content="10/15/2019" />`  
+    ![make sure ms.date value is updated](../../Linked_Image_Files/lpub-stage-ms.date.png)
+
+**If the _ms.date_ value is latest, then the module is updated.**  
+**Else the module update is not live yet.**  
+
+- Use the same method to verify **a new Learning Path** is live.  
+- Use the same method to verify an **update Learning Path** is live.
+
+#### Task 2: Tag the content author in work item
+1. Go to work item.
+1. In the Discussion tab, add a comment to notify author that the content is live and what the docs url is.  
+    ![tag author the content is live](../../Linked_Image_Files/tag-author-t-content-live.png)
+1. In the *04-Publishing Team Use Only* tab:
+    - Fill the **Published Url** with the docs url.
+    - Fill the **Release date** with the current date. 
+1. In the Discussion tab:
+    - Change the **Publish stage** to `4-Shipped`
+    - Change the **State** to `Resolved`
