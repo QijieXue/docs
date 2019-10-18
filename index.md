@@ -3,7 +3,7 @@ layout: home
 title: Create Pull Request in Docs Repo
 ---
 
-<h1>{{page.title}}
+<h1>{{page.title}}</h1>
 
 <ul class="list-bus-stop">
 <li><a href="#1">PR Review</a></li>
