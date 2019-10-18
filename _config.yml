@@ -1,4 +1,4 @@
 theme: jekyll-theme-tactile
 title: "Help document"
 description: "Web site with github pages"
-baseurl:''
+baseurl: "docs"
