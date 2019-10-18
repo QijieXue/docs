@@ -3,29 +3,30 @@
 @import "{{ site.theme }}";
 
 body{
-margin-left: auto;
-margin-right:auto;
-width:80%;
+	margin-left: auto;
+	margin-right:auto;
+	width:80%;
 }
 
 ul.list-bus-stop {
-list-style-type:none;
+	list-style-type:none;
+	margin-top:20px;
 }
 
 ul.list-bus-stop li{
-margin:0;
-padding:12px;
-margin-right:20px;
-display:inline;
-font-size:18px;
-border: 2px solid;
-border-bottom-style:default;
-border-color:gray;
+	margin:0;
+	padding:12px;
+	margin-right:20px;
+	display:inline;
+	font-size:18px;
+	border: 2px solid;
+	border-bottom-style:default;
+	border-color:gray;
 }
 
 ul.list-bus-stop li:hover {
-color: green;
-background-color: yellow;
+	color: green;
+	background-color: yellow;
 }
 
 ul.list-bus-stop li::after{
@@ -37,9 +38,9 @@ ul.list-bus-stop li::after{
     border-right: 2px solid #656565;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-position:absolute;
-margin-left:15px;
-margin-top:5px;	
+	position:absolute;
+	margin-left:15px;
+	margin-top:5px;	
 }
 
 

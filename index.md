@@ -1,11 +1,12 @@
 ---
 layout: home
-title: index page
+title: Create Pull Request in Docs Repo
 ---
 
+<h1>{{page.title}}
+
 <ul class="list-bus-stop">
-<li><a href="#1">Publish</a></li>
-<li><a href="#2">PR Review</a></li>
+<li><a href="#1">PR Review</a></li>
 <li><a href="#3">Sign-off</a></li>
 <li><a href="#4">Merged</a></li>
 <li><a href="#5">PR2Master</a></li>
@@ -13,8 +14,9 @@ title: index page
 </ul>
 
 
-### Create final pull request(final PR) for internal PR review
 <a name="1"></a>
+## Create final pull request(final PR) for internal PR review
+
 <a name="pr-patterns"></a>Pull request(PR) patterns:  
 `learn-pr` repo:
 ```url
@@ -64,8 +66,9 @@ If the trophy for the LP is not available when launching the LP, use the general
 
 **NOTE**: Make sure to replace the general badge or general trophy as soon as you received the real one.
 
-### Sign-off
 <a name="3"></a>
+### Sign-off
+
 
 1. Go to the PR, check [Pull request(PR) patterns](#pr-patterns) section.
 2. Add comment `#sign-off`.  
@@ -74,16 +77,18 @@ If the trophy for the LP is not available when launching the LP, use the general
     - In the Discussion tab, add a comment to notify author that the final PR is sign-off.  
         ![final pr is sign-off]({{site.baseurl}}/assets/lpub-sign-off-notify-author.png)
 
-### Merged to Release branch
 <a name="4"></a>
+### Merged to Release branch
+
 If the final pr is merged to release branch:    
 ![pr is merged]({{site.baseurl}}/assets/lpub-merged-to-release-branch.png)
 1. Go to work item.
 2. Tag Ashley that the PR is merged, and it is ready to go live.  
     ![pr go live]({{site.baseurl}}/assets/lpub-pr-merged-notify-author.png)
 
-### Create a pull request (PR) from Release branch to master
 <a name="5"></a>
+### Create a pull request (PR) from Release branch to master
+
 After the final pr is merged:
 1. Go to the release branch, by clicking the `to` branch in final pr.  
     ![Go to release branch]({{site.baseurl}}/assets/lpub-release-branch.png)
@@ -95,8 +100,9 @@ After the final pr is merged:
 ### Create a pull request (PR) from master to live
 Ashley will do that and let us know when it's live.
 
-### Content is live
 <a name="6"></a>
+### Content is live
+
 
 #### Task 1: Verify content is live
 
