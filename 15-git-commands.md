@@ -1,3 +1,8 @@
+---
+layout: home
+title: Git常用命令
+---
+
 ## Git常用命令
 
 ### 基本操作
