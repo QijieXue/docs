@@ -6,19 +6,19 @@
 ```
 git remote -v
 ```
-![git remote -v](15-remote-version.png)
+![git remote -v]({{site.baseurl}}/assets/15-remote-version.png)
 
 切换分支
 ```
 git checkout branch
 ```
-![git checkout branch](15-switch-branch.png)
+![git checkout branch]({{site.baseurl}}/assets/15-switch-branch.png)
 
 相同分支, 从远程到本地同步
 ```
 git pull
 ```
-![git pull](15-git-pull.png)
+![git pull]({{site.baseurl}}/assets/15-git-pull.png)
 
 添加本地更改
 ```
@@ -34,7 +34,7 @@ git commit -m 'comment'
 ```
 git push origin branch
 ```
-![git push origin master](15-git-push.png)
+![git push origin master]({{site.baseurl}}/assets/15-git-push.png)
 
 ### 高级操作
 
@@ -54,4 +54,4 @@ git push origin master --force
 git checkout branch
 git rebase master
 ```
-![git rebase](15-git-rebase.png)
+![git rebase]({{site.baseurl}}/assets/15-git-rebase.png)
