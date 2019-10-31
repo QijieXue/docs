@@ -3,16 +3,34 @@ layout: home
 title: Create Pull Request in Docs Repo
 ---
 
+
+
 <h1>{{page.title}}</h1>
 
 <ul class="list-bus-stop">
-<li><a href="#1">PR Review</a></li>
-<li><a href="#3">Sign-off</a></li>
+<li><a href="#1">Final PR</a></li>
+<li><a href="#3">#sign-off</a></li>
 <li><a href="#4">Merged</a></li>
 <li><a href="#5">PR2Master</a></li>
 <li><a href="#6">Go Live</a></li>
 </ul>
 
+ ## SLA
+ Mature content (Content quality meet [Learn quality criteria](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-pull-request-quality-criteria?branch=master))
+ 
+ - Handoff to PDETs for `final PR` at least 5 days before your target publish date(PDETs takes 2 days for internal review, logging bug and to collaborate author for applying fix).
+ - `#sign-off` on the PR at least 3 days before your target publish date.
+
+### PDETs `final PR` review
+- **Actual cost for PR review (module)**: 1.5 -2 hours  
+- **PDETs applying fix directly**: 2.5 hours  
+- **PDETs collaborate author applying fix**: 2 days (1 day logging bugs and author applying fix in the night, 2nd day for regress and #sign-off)  
+
+### `#sign-off`
+- **Actual cost for PR review (module)**: 2 - 3 hours
+- **Resolve feedbacks**: a 2nd day after the `#sign-off`  
+- **merge to master**: a 3rd day after the `#sign-off`  
+- **merge to live**: a 3rd day after the `#sign-off`  
 
 <a name="1"></a>
 ## Create final pull request(final PR) for internal PR review
