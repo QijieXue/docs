@@ -98,7 +98,7 @@ If the trophy for the LP is not available when launching the LP, use the general
 <a name="4"></a>
 ### Merged to Release branch
 
-If the final pr is merged to release branch:    
+If the final pr is merged to release branch, (**NOW**, go to <a href="#5">PR2master</a> directly):    
 ![pr is merged]({{site.baseurl}}/assets/lpub-merged-to-release-branch.png)
 1. Go to work item.
 2. Tag Ashley that the PR is merged, and it is ready to go live.  
