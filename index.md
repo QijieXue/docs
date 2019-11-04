@@ -8,7 +8,9 @@ title: Create Pull Request in Docs Repo
 <h1>{{page.title}}</h1>
 
 <ul class="list-bus-stop">
-<li><a href="#1">Final PR</a></li>
+ 
+<li><a href="#01">Content curration</a></li>
+<li><a href="#1">Final PR and test</a></li>
 <li><a href="#3">#sign-off</a></li>
 <li><a href="#4">Merged</a></li>
 <li><a href="#5">PR2Master</a></li>
@@ -31,6 +33,28 @@ title: Create Pull Request in Docs Repo
 - **Resolve feedbacks**: a 2nd day after the `#sign-off`  
 - **merge to master**: a 3rd day after the `#sign-off`  
 - **merge to live**: a 3rd day after the `#sign-off`  
+
+<a name="01"></a>
+## Before creating final pull request(final PR)
+click-through the module in git repo to correct things like:
+1. Check the files name meet following rules:
+- Can **only** contain lowercase letters, numbers, and hyphens. Don't use space or punctuation characters.
+- Words and numbers in the file name **must** be separated using hyphens.
+- Use no more than 80 characters. ([Words count tool](https://www.lettercount.com/))
+- Don't use unnecessary small words, such as a, or, and, the, and in.
+- Avoid unapproved or unnecessary acronyms. For Azure specificially, don't use rm or arm as acronyms anywhare in a file name.
+2. Check the content of markdown files meet following rules:
+- For knowledge check, every question has three options to choose from, one correct, two incorrect.
+- For knowledge check, every option has explanation.
+- For knowledge check, the content start with `quiz: knowledge check`
+- For all content, avoid using unnecessary numbered list, numbered list is used **only when there are sequence among the items.**
+- For all content, only H2 and lower headings are allowed, do not allow authors to add H1 headings.
+- For all content, all embedded videos must be on RedTiger hosting.
+
+Click-through the module work item to correct things like:
+1. Check the summary length is 20-25 words; up to 35 words is acceptable.
+2. Check the summary, learning objectieves to avoid using unnecessary numbered list.
+
 
 <a name="1"></a>
 ## Create final pull request(final PR) for internal PR review
