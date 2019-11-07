@@ -54,6 +54,7 @@ click-through the module in git repo to correct things like:
 Click-through the module work item to correct things like:
 1. Check the summary length is 20-25 words; up to 35 words is acceptable.
 2. Check the summary, learning objectieves to avoid using unnecessary numbered list.
+3. Update the `ms.date` to today, and sync the date to all its Unit work items.
 
 
 <a name="1"></a>
