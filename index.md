@@ -98,6 +98,11 @@ PR review Test Cases:
 [Content Review](https://microsoftdigitallearning.visualstudio.com/Courseware/_queries/query-edit/66abaade-4bd0-4a6f-9925-22c0982a69dc/)  
 [PR review](https://microsoftdigitallearning.visualstudio.com/Courseware/_queries/query/ef3edd45-2929-4886-bda8-87ff622ee002)
 
+Test by Role:  
+[Git source check](https://microsoftdigitallearning.visualstudio.com/Courseware/_queries/query/522617e1-7299-4d41-946b-cb63d7302c42)  
+[PR page review](https://microsoftdigitallearning.visualstudio.com/Courseware/_queries/query/a5c2faab-eef3-417a-91be-1dd7fbc3f306)  
+[Preview page check](https://microsoftdigitallearning.visualstudio.com/Courseware/_queries/query/801c0b38-a2fc-4015-9621-bbbafa8bbafb)  
+
 #### Task 3: Check-in the Policheck result into git repo _Compliance_Results_ folder.
 
 #### Use general badge or general trophy
