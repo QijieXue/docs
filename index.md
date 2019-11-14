@@ -34,6 +34,12 @@ title: Create Pull Request in Docs Repo
 - **merge to master**: a 3rd day after the `#sign-off`  
 - **merge to live**: a 3rd day after the `#sign-off`  
 
+
+Learn SLA Reference:  
+[Best practices](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-best-practices?branch=master)  
+[How to create pr](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-pull-request-etiquette?branch=master)  
+[Learn PR Reviewer SLA](https://review.docs.microsoft.com/en-us/help/contribute/publishing-schedules?branch=master)  
+
 <a name="01"></a>
 ## Before creating final pull request(final PR)
 click-through the module in git repo to correct things like:
