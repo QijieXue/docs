@@ -23,6 +23,10 @@ title: Create Pull Request in Docs Repo
  - Handoff to PDETs for `final PR` at least 5 days before your target publish date(PDETs takes 2 days for internal review, logging bug and to collaborate author for applying fix).
  - `#sign-off` on the PR at least 3 days before your target publish date.
 
+
+![learn pr review process]({{site.baseurl}}/assets/Learn-pr-process.png)
+
+
 ### PDETs `final PR` review
 - **Actual cost for PR review (module)**: 1.5 -2 hours  
 - **PDETs applying fix directly**: 2.5 hours  
