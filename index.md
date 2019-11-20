@@ -207,4 +207,5 @@ To verify an **update module** is live:
     - Fill the **Release date** with the current date. 
 1. In the Discussion tab:
     - Change the **Publish stage** to `4-Shipped`
-    - Change the **State** to `Resolved`
+    - Change the **State** to `Released`
+1. Create a version (Module Update work item).
