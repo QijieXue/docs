@@ -9,7 +9,7 @@ title: Create Pull Request in Docs Repo
 
 <ul class="list-bus-stop">
  
-<li><a href="#01">Content curration</a></li>
+<li><a href="#01">Content review</a></li>
 <li><a href="#1">Final PR and test</a></li>
 <li><a href="#3">#sign-off</a></li>
 <li><a href="#4">Merged</a></li>
